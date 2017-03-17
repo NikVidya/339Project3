@@ -1,0 +1,296 @@
+/*
+	--~~== Header ==~~--
+*/
+header {
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	border-bottom: solid 2px #821732;
+	background-color: rgba(0, 102, 51,0.7);
+}
+
+header h1 {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	font-size: 3.5em;
+	color: #FFF;
+}
+
+header h1 a,
+header h1 a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+header h1 a:hover {
+	color: #EEE;
+}
+
+header nav {
+	display: block;
+	position: relative;
+	background-color: rgba(0,0,0,0.1);
+	border-top: solid 2px rgba(0,0,0,0.2);
+	margin: -10px;
+	margin-top: 2px;
+	padding: 0;
+}
+header nav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header nav a {
+	display: inline-block;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #FFF;
+	transition: background-color 300ms ease;
+}
+header nav a:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: #FFF;
+}
+header nav a:visited,
+header nav a:active {
+	color: #FFF;
+}
+
+/*
+	--~~== End Header ==~~--
+*/
+
+.content {
+	min-height: calc(100vh - 2em);
+}
+body {
+	background:#bbb;
+}
+/*
+	--~~== Card ==~~--
+*/
+.card {
+	width: 40%;
+	border: solid #000000 2px;
+	border-radius: 5px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(68, 48, 120,0.7);
+	padding: 20px;
+	padding-top: 15px;
+	float:left;
+}
+
+.card .action {
+	text-align: right;
+	padding: 10px;
+	margin: 5px;
+}
+.card h3 {
+	margin-bottom: 10px;
+}
+
+/*
+	--~~== End Card ==~~--
+*/
+
+/*
+	--~~== Text Section ==~~--
+*/
+	.text {
+		width: 80%;
+		margin: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		color: #FFF;
+		position: relative;
+		background-color: rgba(0,0,0,0.3);
+		box-shadow: 0 0 3px 4px rgba(0,0,0,0.3);
+	}
+
+	.text a {
+		color: #FFF;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.text a:visited {
+		color: #FFF;
+	}
+	.text a:focus,
+	.text a:hover {
+		color: #DDD;
+	}
+	.text a:active {
+		color: #FFF;
+	}
+	 .lead {
+		color: #222;
+	}
+/*
+	--~~== End Text Section ==~~--
+*/
+
+/*
+	--~~== Table of Contents ==~~--
+*/
+
+	nav.toc .section-header {
+		font-weight: bold;
+		font-size: 1.2em;
+	color: #eee;
+
+	}
+	nav.toc > section {
+		margin-left: 5px;
+	}
+	nav.toc a {
+		padding: 3px;
+	color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+	nav.toc a::before {
+		content: "-- ";
+	}
+	nav.toc a::after {
+		content: " --";
+	}
+	nav.toc a:focus,
+	nav.toc a:hover{
+		color: #999;
+	}
+
+/*
+	--~~== End Table of Contents ==~~--
+*/
+
+
+/*
+	--~~== Interactive Elements ==~~--
+*/
+	.btn {
+		/*border: solid 1px #177832;*/
+		border: solid 1px #000000;
+		border-radius: 5px;
+		padding: 10px;
+		/*color: #177832;*/
+		color: #FFF;
+		background: #004d26;
+		text-decoration: none;
+		transition: background-color 200ms, color 200ms;
+		cursor: pointer;
+		font-family: "Aller", sans-serif;
+	}
+
+
+	.btn:hover {
+		/*background-color: #177832;*/
+		background-color: #c31e1d;
+		color: #FFF;
+	}
+	.btn:active {
+		background-color: #6E1111;
+		border-color: #B20F0E;
+	}
+
+	.btn.nav {
+		text-decoration: none;
+	}
+	.btn.nav:visited {
+		/*color: #177832;*/
+		color: #FFF;
+	}
+
+	.btn.nav:visited:hover {
+		color: #FFF;
+	}
+
+	.btn.reset {
+		border-color: #515151;
+		color: #999999;
+	}
+
+	.btn.reset:active {
+		background-color: #3d3d3d;
+		color: #FFF;
+	}
+
+	.btn.reset:hover {
+		background-color: #727272;
+		color: #FFF;
+	}
+
+
+	input[type=text] {
+		padding: 10px;
+		border: solid #999 1px; 
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.5) inset;
+		border-radius: 5px;
+	}
+
+/*
+	--~~== End Interactive Elements ==~~--
+*/
+/* misc images */
+.img-large {
+	width:100%;
+}
+
+
+.sample-section {
+	text-align:left;
+	margin:2rem;
+	padding:3rem;
+	background-color:#eee;
+	border: 5px solid #821732;
+	display:inline-block;
+	float:left;
+	width:80%;
+}
+.sample {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+/*
+	--~~== Footer =~~--
+*/
+	footer {
+		position: relative;
+		display: block;
+		background-color: rgba(3,50,79,0.72);
+		height: 2em;
+		padding: 5px;
+		text-align: center;
+	}
+	footer nav a {
+		display: inline-block;
+	}
+	
+	footer nav a{
+		color: #FFF;
+		text-decoration: none;
+		padding: 3px;
+		padding-left: 12px;
+		padding-right: 12px;
+		cursor: pointer;
+	}
+	footer nav a:visited {
+		color: #FFF;
+	}
+	footer nav a:focus,
+	footer nav a:hover {
+		color: #999;
+	}
+	footer nav a:active {
+		color: #999;
+	}
+/*
+	--~~== End Footer ==~~--
+*/
