@@ -7,6 +7,7 @@ body {
 	font-weight: normal;
 	font-style: normal;	
     font-size: 1.2em;
+    color:#222;
 }
 
 p.lead {
@@ -22,30 +23,34 @@ p.lead {
 .muted {
     font-weight: lighter;
 }
-
+p {
+    line-height: 1.4;
+    margin-bottom:1em;
+}
 h1,
 h2 {
-    /*font-family: "Calligraffiti", sans-serif;*/
     font-family: "Aller", sans-serif;
 }
 
 h1 {
-    font-size: 3.2em;
-    color: #00994d;
+    font-size: 2.2em;
+    margin-bottom:10px;
 }
 h2 {
-    font-size: 2.5em;
-    color: #00994d;
+    font-size: 1.8em;
     margin-bottom:10px;
 }
 h3 {
     font-size: 1.5em;
+    margin-bottom:5px;
 }
 h4 {
     font-size: 1.1em;
+    margin-bottom:5px;
 }
 h5 {
     font-size: 1em;
+    margin-bottom:5px;
 }
 
 .code,
@@ -55,10 +60,10 @@ code {
 
 
 a {
-    color: #00994d;
+    color: #224444;
 }
 a:visited {
-    color: #560712;
+    color: #335555;
 }
 
 a:hover,
