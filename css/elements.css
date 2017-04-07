@@ -7,6 +7,7 @@ header {
 	position: relative;
 	background-color: #222;
 	margin-bottom: 5px;
+	background-image: url("../img/darkbg.jpg");
 }
 
 header h1 {
@@ -31,14 +32,12 @@ header nav {
 	text-align:center;
 	display: block;
 	position: relative;
-	background-color: #1e1e1e;
-	border-bottom: 2px solid #171717;
+	background-color: rgba(0,0,0,0.2);
 	margin: -10px;
 	margin-bottom: 2px;
 	padding: 0;
 }
 header nav::after {
-	content: "";
 	display: block;
 	clear: both;
 }
@@ -67,21 +66,24 @@ header nav a:active {
 
 .content {
 	min-height: calc(100vh - 2em);
-	margin-left:10%;
-	margin-right:10%;
-	padding:2rem;
-	text-align: center;
+	margin-left:5%;
+	margin-right:5%;
+	padding:1rem;
+	text-align: left;
 	background:#222;
+}
+.content-row {
+	text-align:left;
 }
 body {
 	background:#ccc;
+	background-image: url("../img/lightbg.jpg")
 }
 /*
 	--~~== Card ==~~--
 */
 .card {
 	width: 40%;
-	border: solid #000 2px;
 	border-radius: 5px;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -181,7 +183,6 @@ body {
 */
 	.btn {
 		/*border: solid 1px #177832;*/
-		border: solid 1px #000000;
 		border-radius: 5px;
 		padding: 10px;
 		margin:3px;
@@ -202,7 +203,6 @@ body {
 	}
 	.btn:active {
 		background-color: #6E1111;
-		border-color: #B20F0E;
 	}
 
 	.btn.nav {
@@ -218,26 +218,12 @@ body {
 	}
 
 	.btn.reset {
-		border-color: #515151;
 		color: #999999;
 	}
 
 	.btn.reset:active {
 		background-color: #3d3d3d;
 		color: #FFF;
-	}
-
-	/*.btn.reset:hover {*
-		background-color: #727272;
-		color: #FFF;
-	}
-
-
-	input[type=text] {
-		padding: 10px;
-		border: solid #999 1px; 
-		box-shadow: 0 0 3px 0 rgba(0,0,0,0.5) inset;
-		border-radius: 5px;
 	}
 
 /*
@@ -251,18 +237,16 @@ body {
 .sample-section {
 	text-align:left;
 	margin-bottom:2rem;
+	margin-right:1.5rem;
 	padding:2rem;
 	background-color:#eee;
-	border: 3px solid #000;
 	display:inline-block;
-	width:40%;
+	width:45%;
 	vertical-align:text-top;
-	overflow:scroll;
-	height:450px;
 }
 @media (max-width: 500px) {
 	.sample-section{
-		width:80%;
+		width:90%;
 	}
 }
 .sample {
